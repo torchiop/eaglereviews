@@ -30,9 +30,9 @@ class PostsListViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowPostDetail" {
-            let destination = segue.destination as! ProfessorDetailViewController
+            let destination = segue.destination as! PostDetailViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow
-            destination.professor = professors.professorArray[selectedIndexPath!.row]
+            destination.post = posts.postArray[selectedIndexPath!.row]
         }
     }
     
@@ -44,7 +44,7 @@ extension PostsListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostTableViewCell
-        cell.titleLabel?.text = posts.postArray[indexPath.row].title
+        cell.titleLabel?.text = posts.postArray[indexPath.row].text
         return cell
     }
     
