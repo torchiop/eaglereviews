@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384582A0281DF59D0032D9B4 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845829F281DF59D0032D9B4 /* ReviewTableViewController.swift */; };
+		384582A2281E01160032D9B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384582A1281E01160032D9B4 /* LoginViewController.swift */; };
+		384582A4281E022A0032D9B4 /* EagleReviewsUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384582A3281E022A0032D9B4 /* EagleReviewsUser.swift */; };
+		384E576D281DBEE100912728 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E576C281DBEE100912728 /* Review.swift */; };
+		384E576F281DC08400912728 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E576E281DC08400912728 /* Reviews.swift */; };
+		384E5773281DC68300912728 /* ProfessorReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E5772281DC68200912728 /* ProfessorReviewTableViewCell.swift */; };
+		384E5775281DCEDD00912728 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E5774281DCEDD00912728 /* UIView+addBorder.swift */; };
+		384E5777281DCEF900912728 /* UIBarButtonItem+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E5776281DCEF900912728 /* UIBarButtonItem+hide.swift */; };
+		385FFDD2281A011800A0BFD9 /* ProfessorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FFDD1281A011800A0BFD9 /* ProfessorListViewController.swift */; };
+		385FFDD4281A02ED00A0BFD9 /* ProfessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FFDD3281A02ED00A0BFD9 /* ProfessorTableViewCell.swift */; };
+		385FFDD6281A06BA00A0BFD9 /* ProfessorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FFDD5281A06BA00A0BFD9 /* ProfessorDetailViewController.swift */; };
+		385FFDD8281A10CF00A0BFD9 /* Professor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FFDD7281A10CF00A0BFD9 /* Professor.swift */; };
+		385FFDDA281A165900A0BFD9 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FFDD9281A165800A0BFD9 /* UIViewController+alert.swift */; };
+		385FFDDC281A175F00A0BFD9 /* Professors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FFDDB281A175F00A0BFD9 /* Professors.swift */; };
 		3885D418281867340018EEE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D417281867340018EEE9 /* AppDelegate.swift */; };
 		3885D41A281867340018EEE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D419281867340018EEE9 /* SceneDelegate.swift */; };
-		3885D41C281867340018EEE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D41B281867340018EEE9 /* ViewController.swift */; };
 		3885D41F281867340018EEE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3885D41D281867340018EEE9 /* Main.storyboard */; };
 		3885D421281867360018EEE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3885D420281867360018EEE9 /* Assets.xcassets */; };
 		3885D424281867360018EEE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3885D422281867360018EEE9 /* LaunchScreen.storyboard */; };
+		38E282102818697900B60DA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E2820F2818697900B60DA9 /* GoogleService-Info.plist */; };
+		CEE4723BFB78F125227E3097 /* Pods_EagleReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88676F2826C501F03BFD017 /* Pods_EagleReviews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15BFDB87E4CDCA43A2E160CE /* Pods-EagleReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleReviews.release.xcconfig"; path = "Target Support Files/Pods-EagleReviews/Pods-EagleReviews.release.xcconfig"; sourceTree = "<group>"; };
+		3845829F281DF59D0032D9B4 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		384582A1281E01160032D9B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		384582A3281E022A0032D9B4 /* EagleReviewsUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EagleReviewsUser.swift; sourceTree = "<group>"; };
+		384E576C281DBEE100912728 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		384E576E281DC08400912728 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		384E5772281DC68200912728 /* ProfessorReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorReviewTableViewCell.swift; sourceTree = "<group>"; };
+		384E5774281DCEDD00912728 /* UIView+addBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
+		384E5776281DCEF900912728 /* UIBarButtonItem+hide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+hide.swift"; sourceTree = "<group>"; };
+		385FFDD1281A011800A0BFD9 /* ProfessorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorListViewController.swift; sourceTree = "<group>"; };
+		385FFDD3281A02ED00A0BFD9 /* ProfessorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorTableViewCell.swift; sourceTree = "<group>"; };
+		385FFDD5281A06BA00A0BFD9 /* ProfessorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorDetailViewController.swift; sourceTree = "<group>"; };
+		385FFDD7281A10CF00A0BFD9 /* Professor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professor.swift; sourceTree = "<group>"; };
+		385FFDD9281A165800A0BFD9 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		385FFDDB281A175F00A0BFD9 /* Professors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professors.swift; sourceTree = "<group>"; };
 		3885D414281867340018EEE9 /* EagleReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EagleReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3885D417281867340018EEE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3885D419281867340018EEE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3885D41B281867340018EEE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3885D41E281867340018EEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3885D420281867360018EEE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3885D423281867360018EEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3885D425281867360018EEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E2820F2818697900B60DA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B1E8D430B6A64424DA9C1E58 /* Pods-EagleReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleReviews.debug.xcconfig"; path = "Target Support Files/Pods-EagleReviews/Pods-EagleReviews.debug.xcconfig"; sourceTree = "<group>"; };
+		D88676F2826C501F03BFD017 /* Pods_EagleReviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EagleReviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE4723BFB78F125227E3097 /* Pods_EagleReviews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +75,8 @@
 			children = (
 				3885D416281867340018EEE9 /* EagleReviews */,
 				3885D415281867340018EEE9 /* Products */,
+				E16BF8AA21D2A2F2D1C502DA /* Pods */,
+				A3C554803CCD1B86A6BF4C94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +93,44 @@
 			children = (
 				3885D417281867340018EEE9 /* AppDelegate.swift */,
 				3885D419281867340018EEE9 /* SceneDelegate.swift */,
-				3885D41B281867340018EEE9 /* ViewController.swift */,
+				385FFDD7281A10CF00A0BFD9 /* Professor.swift */,
+				385FFDDB281A175F00A0BFD9 /* Professors.swift */,
+				384E576C281DBEE100912728 /* Review.swift */,
+				384E576E281DC08400912728 /* Reviews.swift */,
+				384582A3281E022A0032D9B4 /* EagleReviewsUser.swift */,
+				384582A1281E01160032D9B4 /* LoginViewController.swift */,
+				385FFDD1281A011800A0BFD9 /* ProfessorListViewController.swift */,
+				385FFDD3281A02ED00A0BFD9 /* ProfessorTableViewCell.swift */,
+				385FFDD5281A06BA00A0BFD9 /* ProfessorDetailViewController.swift */,
+				3845829F281DF59D0032D9B4 /* ReviewTableViewController.swift */,
+				384E5772281DC68200912728 /* ProfessorReviewTableViewCell.swift */,
+				385FFDD9281A165800A0BFD9 /* UIViewController+alert.swift */,
+				384E5774281DCEDD00912728 /* UIView+addBorder.swift */,
+				384E5776281DCEF900912728 /* UIBarButtonItem+hide.swift */,
 				3885D41D281867340018EEE9 /* Main.storyboard */,
 				3885D420281867360018EEE9 /* Assets.xcassets */,
 				3885D422281867360018EEE9 /* LaunchScreen.storyboard */,
 				3885D425281867360018EEE9 /* Info.plist */,
+				38E2820F2818697900B60DA9 /* GoogleService-Info.plist */,
 			);
 			path = EagleReviews;
+			sourceTree = "<group>";
+		};
+		A3C554803CCD1B86A6BF4C94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D88676F2826C501F03BFD017 /* Pods_EagleReviews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E16BF8AA21D2A2F2D1C502DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1E8D430B6A64424DA9C1E58 /* Pods-EagleReviews.debug.xcconfig */,
+				15BFDB87E4CDCA43A2E160CE /* Pods-EagleReviews.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3885D428281867360018EEE9 /* Build configuration list for PBXNativeTarget "EagleReviews" */;
 			buildPhases = (
+				516DA748BA4B87EC46085F45 /* [CP] Check Pods Manifest.lock */,
 				3885D410281867340018EEE9 /* Sources */,
 				3885D411281867340018EEE9 /* Frameworks */,
 				3885D412281867340018EEE9 /* Resources */,
+				003542BF226E9AFAA7C435A4 /* [CP] Embed Pods Frameworks */,
+				041705A48EEAFA8DA314FE3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3885D424281867360018EEE9 /* LaunchScreen.storyboard in Resources */,
+				38E282102818697900B60DA9 /* GoogleService-Info.plist in Resources */,
 				3885D421281867360018EEE9 /* Assets.xcassets in Resources */,
 				3885D41F281867340018EEE9 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +203,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		003542BF226E9AFAA7C435A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EagleReviews/Pods-EagleReviews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EagleReviews/Pods-EagleReviews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EagleReviews/Pods-EagleReviews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		041705A48EEAFA8DA314FE3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EagleReviews/Pods-EagleReviews-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EagleReviews/Pods-EagleReviews-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EagleReviews/Pods-EagleReviews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		516DA748BA4B87EC46085F45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EagleReviews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3885D410281867340018EEE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3885D41C281867340018EEE9 /* ViewController.swift in Sources */,
+				384E5773281DC68300912728 /* ProfessorReviewTableViewCell.swift in Sources */,
+				385FFDDC281A175F00A0BFD9 /* Professors.swift in Sources */,
+				384E5777281DCEF900912728 /* UIBarButtonItem+hide.swift in Sources */,
+				384582A4281E022A0032D9B4 /* EagleReviewsUser.swift in Sources */,
+				384582A2281E01160032D9B4 /* LoginViewController.swift in Sources */,
+				385FFDD8281A10CF00A0BFD9 /* Professor.swift in Sources */,
 				3885D418281867340018EEE9 /* AppDelegate.swift in Sources */,
+				385FFDD2281A011800A0BFD9 /* ProfessorListViewController.swift in Sources */,
+				385FFDD6281A06BA00A0BFD9 /* ProfessorDetailViewController.swift in Sources */,
+				384E576D281DBEE100912728 /* Review.swift in Sources */,
+				384E5775281DCEDD00912728 /* UIView+addBorder.swift in Sources */,
 				3885D41A281867340018EEE9 /* SceneDelegate.swift in Sources */,
+				384E576F281DC08400912728 /* Reviews.swift in Sources */,
+				384582A0281DF59D0032D9B4 /* ReviewTableViewController.swift in Sources */,
+				385FFDD4281A02ED00A0BFD9 /* ProfessorTableViewCell.swift in Sources */,
+				385FFDDA281A165900A0BFD9 /* UIViewController+alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +424,7 @@
 		};
 		3885D429281867360018EEE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E8D430B6A64424DA9C1E58 /* Pods-EagleReviews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +453,7 @@
 		};
 		3885D42A281867360018EEE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BFDB87E4CDCA43A2E160CE /* Pods-EagleReviews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
