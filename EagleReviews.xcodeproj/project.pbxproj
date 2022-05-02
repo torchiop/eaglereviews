@@ -27,15 +27,6 @@
 		3885D421281867360018EEE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3885D420281867360018EEE9 /* Assets.xcassets */; };
 		3885D424281867360018EEE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3885D422281867360018EEE9 /* LaunchScreen.storyboard */; };
 		38E282102818697900B60DA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E2820F2818697900B60DA9 /* GoogleService-Info.plist */; };
-		38EF9500281F926E00F73453 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF94FF281F926E00F73453 /* Post.swift */; };
-		38EF9502281F94B300F73453 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF9501281F94B300F73453 /* Posts.swift */; };
-		38EF9504281F953100F73453 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF9503281F953100F73453 /* PostsListViewController.swift */; };
-		38EF9506281F9A1E00F73453 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF9505281F9A1E00F73453 /* PostTableViewCell.swift */; };
-		38EF950E281FA6BB00F73453 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF950D281FA6BB00F73453 /* PostDetailViewController.swift */; };
-		38EF9510281FAAC600F73453 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF950F281FAAC600F73453 /* Comment.swift */; };
-		38EF9512281FAACE00F73453 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF9511281FAACE00F73453 /* Comments.swift */; };
-		38EF9514281FAC0500F73453 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF9513281FAC0500F73453 /* CommentTableViewCell.swift */; };
-		38EF9516281FB0B700F73453 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF9515281FB0B700F73453 /* CommentTableViewController.swift */; };
 		CEE4723BFB78F125227E3097 /* Pods_EagleReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88676F2826C501F03BFD017 /* Pods_EagleReviews.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,15 +54,6 @@
 		3885D423281867360018EEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3885D425281867360018EEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E2820F2818697900B60DA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		38EF94FF281F926E00F73453 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		38EF9501281F94B300F73453 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
-		38EF9503281F953100F73453 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
-		38EF9505281F9A1E00F73453 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
-		38EF950D281FA6BB00F73453 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
-		38EF950F281FAAC600F73453 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		38EF9511281FAACE00F73453 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
-		38EF9513281FAC0500F73453 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
-		38EF9515281FB0B700F73453 /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		B1E8D430B6A64424DA9C1E58 /* Pods-EagleReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleReviews.debug.xcconfig"; path = "Target Support Files/Pods-EagleReviews/Pods-EagleReviews.debug.xcconfig"; sourceTree = "<group>"; };
 		D88676F2826C501F03BFD017 /* Pods_EagleReviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EagleReviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,10 +117,6 @@
 				385FFDDB281A175F00A0BFD9 /* Professors.swift */,
 				384E576C281DBEE100912728 /* Review.swift */,
 				384E576E281DC08400912728 /* Reviews.swift */,
-				38EF94FF281F926E00F73453 /* Post.swift */,
-				38EF9501281F94B300F73453 /* Posts.swift */,
-				38EF950F281FAAC600F73453 /* Comment.swift */,
-				38EF9511281FAACE00F73453 /* Comments.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -146,8 +124,6 @@
 		38EF9518281FB79200F73453 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				38EF9505281F9A1E00F73453 /* PostTableViewCell.swift */,
-				38EF9513281FAC0500F73453 /* CommentTableViewCell.swift */,
 				385FFDD3281A02ED00A0BFD9 /* ProfessorTableViewCell.swift */,
 				384E5772281DC68200912728 /* ProfessorReviewTableViewCell.swift */,
 			);
@@ -157,7 +133,6 @@
 		38EF9519281FB7C800F73453 /* Table View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38EF9515281FB0B700F73453 /* CommentTableViewController.swift */,
 				3845829F281DF59D0032D9B4 /* ReviewTableViewController.swift */,
 			);
 			path = "Table View Controllers";
@@ -166,7 +141,6 @@
 		38EF951A281FB7F900F73453 /* List View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38EF9503281F953100F73453 /* PostsListViewController.swift */,
 				385FFDD1281A011800A0BFD9 /* ProfessorListViewController.swift */,
 			);
 			path = "List View Controllers";
@@ -186,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				385FFDD5281A06BA00A0BFD9 /* ProfessorDetailViewController.swift */,
-				38EF950D281FA6BB00F73453 /* PostDetailViewController.swift */,
 			);
 			path = "Detail View Controllers";
 			sourceTree = "<group>";
@@ -343,29 +316,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				384E5773281DC68300912728 /* ProfessorReviewTableViewCell.swift in Sources */,
-				38EF950E281FA6BB00F73453 /* PostDetailViewController.swift in Sources */,
 				385FFDDC281A175F00A0BFD9 /* Professors.swift in Sources */,
 				384E5777281DCEF900912728 /* UIBarButtonItem+hide.swift in Sources */,
 				384582A4281E022A0032D9B4 /* EagleReviewsUser.swift in Sources */,
-				38EF9500281F926E00F73453 /* Post.swift in Sources */,
 				384582A2281E01160032D9B4 /* LoginViewController.swift in Sources */,
 				385FFDD8281A10CF00A0BFD9 /* Professor.swift in Sources */,
-				38EF9506281F9A1E00F73453 /* PostTableViewCell.swift in Sources */,
-				38EF9510281FAAC600F73453 /* Comment.swift in Sources */,
-				38EF9502281F94B300F73453 /* Posts.swift in Sources */,
 				3885D418281867340018EEE9 /* AppDelegate.swift in Sources */,
-				38EF9504281F953100F73453 /* PostsListViewController.swift in Sources */,
 				385FFDD2281A011800A0BFD9 /* ProfessorListViewController.swift in Sources */,
 				385FFDD6281A06BA00A0BFD9 /* ProfessorDetailViewController.swift in Sources */,
 				384E576D281DBEE100912728 /* Review.swift in Sources */,
 				384E5775281DCEDD00912728 /* UIView+addBorder.swift in Sources */,
 				3885D41A281867340018EEE9 /* SceneDelegate.swift in Sources */,
-				38EF9512281FAACE00F73453 /* Comments.swift in Sources */,
-				38EF9514281FAC0500F73453 /* CommentTableViewCell.swift in Sources */,
 				384E576F281DC08400912728 /* Reviews.swift in Sources */,
 				384582A0281DF59D0032D9B4 /* ReviewTableViewController.swift in Sources */,
 				385FFDD4281A02ED00A0BFD9 /* ProfessorTableViewCell.swift in Sources */,
-				38EF9516281FB0B700F73453 /* CommentTableViewController.swift in Sources */,
 				385FFDDA281A165900A0BFD9 /* UIViewController+alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

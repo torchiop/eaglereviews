@@ -27,7 +27,7 @@ class ReviewTableViewController: UITableViewController {
             for starButton in starButtonCollection {
                 let imageName = (starButton.tag < rating ? "star.fill" : "star")
                 starButton.setImage(UIImage(systemName: imageName), for: .normal)
-                starButton.tintColor = (starButton.tag < rating ? .systemRed : .darkText)
+                starButton.tintColor = (starButton.tag < rating ? UIColor(named: "Maroon") : .darkText)
             }
             print(">> new rating \(rating)")
             review.rating = rating
@@ -68,8 +68,9 @@ class ReviewTableViewController: UITableViewController {
             } else { // Review posted by different user
                 saveBarButton.hide()
                 cancelBarButton.hide()
+                postedByLabel.text = "Rating:"
                 for starButton in starButtonCollection {
-                    starButton.backgroundColor = .white
+                    starButton.backgroundColor = UIColor(named: "Gold")
                     starButton.isEnabled = false
                 }
                 reviewTitleField.isEnabled = false

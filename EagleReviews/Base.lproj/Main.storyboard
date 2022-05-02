@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="pxV-ge-4BA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Gold"/>
                     </view>
                     <navigationItem key="navigationItem" id="NGQ-Ax-lFH"/>
                     <connections>
@@ -39,6 +39,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jjc-xx-D14">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" name="Gold"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="44" id="tT6-Zp-SnH" customClass="ProfessorTableViewCell" customModule="EagleReviews" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
@@ -48,21 +49,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Professor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2X-Az-dUZ">
-                                                    <rect key="frame" x="8" y="4" width="157" height="33"/>
+                                                    <rect key="frame" x="8" y="4" width="169.5" height="33"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33" id="bPd-Jq-DGi"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                                    <color key="textColor" name="Gold"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Rating: 5.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOm-fU-0az">
-                                                    <rect key="frame" x="306" y="18" width="100" height="22"/>
+                                                    <rect key="frame" x="286" y="18" width="120" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="vxD-or-wO7"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="15"/>
+                                                    <color key="textColor" name="Gold"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -73,6 +74,7 @@
                                                 <constraint firstItem="y2X-Az-dUZ" firstAttribute="top" secondItem="xJu-ka-c9h" secondAttribute="top" constant="4" id="Y68-lt-xhb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Maroon"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="y2X-Az-dUZ" id="d9m-gR-8cc"/>
                                             <outlet property="ratingLabel" destination="kOm-fU-0az" id="baz-YN-v50"/>
@@ -83,7 +85,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ADe-aR-rCw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Gold"/>
                         <constraints>
                             <constraint firstItem="ADe-aR-rCw" firstAttribute="trailing" secondItem="jjc-xx-D14" secondAttribute="trailing" id="In2-c9-iAY"/>
                             <constraint firstItem="jjc-xx-D14" firstAttribute="top" secondItem="ADe-aR-rCw" secondAttribute="top" id="OX6-PM-MvN"/>
@@ -96,7 +98,7 @@
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="0pA-yZ-ngL">
                                 <rect key="frame" x="20" y="10.5" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Maroon"/>
                                 <segments>
                                     <segment title="Sort Alphabetically"/>
                                     <segment title="Sort by Rating"/>
@@ -110,22 +112,17 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="VoC-g0-pyO">
                         <barButtonItem key="leftBarButtonItem" title="Sign Out" id="I7g-yd-XzT">
+                            <color key="tintColor" name="Maroon"/>
                             <connections>
                                 <segue destination="VPR-J8-8qc" kind="unwind" identifier="SignOutUnwind" unwindAction="unwindSignOutPressedWithSegue:" id="QqQ-lp-lYb"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="NJh-zN-g5f">
-                                <connections>
-                                    <segue destination="Nyq-Go-ZMC" kind="presentation" identifier="AddDetail" modalPresentationStyle="fullScreen" id="rP2-fq-RCd"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Discussion" id="auF-Na-EPz">
-                                <connections>
-                                    <segue destination="LfG-CE-KBT" kind="presentation" id="ek1-Zj-Zc3"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NJh-zN-g5f">
+                            <color key="tintColor" name="Maroon"/>
+                            <connections>
+                                <segue destination="Nyq-Go-ZMC" kind="presentation" identifier="AddDetail" modalPresentationStyle="fullScreen" id="rP2-fq-RCd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
@@ -138,236 +135,6 @@
             </objects>
             <point key="canvasLocation" x="2580" y="110"/>
         </scene>
-        <!--Posts List View Controller-->
-        <scene sceneID="dtU-uc-4hS">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="AFk-sF-aHY" customClass="PostsListViewController" customModule="EagleReviews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2dU-yV-bPX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jvp-82-wTi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="75" id="B8q-Sy-HiT" customClass="PostTableViewCell" customModule="EagleReviews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B8q-Sy-HiT" id="nOQ-uu-MMX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maz-Dr-d3G">
-                                                    <rect key="frame" x="4" y="8" width="406" height="59"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Maz-Dr-d3G" firstAttribute="leading" secondItem="nOQ-uu-MMX" secondAttribute="leading" constant="4" id="72z-j5-8Ca"/>
-                                                <constraint firstAttribute="bottom" secondItem="Maz-Dr-d3G" secondAttribute="bottom" constant="8" id="Os9-cZ-bcc"/>
-                                                <constraint firstItem="Maz-Dr-d3G" firstAttribute="top" secondItem="nOQ-uu-MMX" secondAttribute="top" constant="8" id="x7i-pi-oIN"/>
-                                                <constraint firstAttribute="trailing" secondItem="Maz-Dr-d3G" secondAttribute="trailing" constant="4" id="zRv-Xn-kRK"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="titleLabel" destination="Maz-Dr-d3G" id="UHG-6X-uxd"/>
-                                            <segue destination="tYg-AA-kin" kind="show" identifier="ShowPost" id="fdS-a7-giv"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aj2-sR-8U1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Jvp-82-wTi" firstAttribute="top" secondItem="aj2-sR-8U1" secondAttribute="top" id="4A2-16-ehA"/>
-                            <constraint firstItem="Jvp-82-wTi" firstAttribute="leading" secondItem="aj2-sR-8U1" secondAttribute="leading" id="70J-77-yPn"/>
-                            <constraint firstItem="aj2-sR-8U1" firstAttribute="bottom" secondItem="Jvp-82-wTi" secondAttribute="bottom" id="imU-xY-WIb"/>
-                            <constraint firstItem="aj2-sR-8U1" firstAttribute="trailing" secondItem="Jvp-82-wTi" secondAttribute="trailing" id="tD4-2t-CoI"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="UjQ-QZ-7pS">
-                        <barButtonItem key="rightBarButtonItem" title="Add Post" id="qiB-bu-hVy">
-                            <connections>
-                                <segue destination="mFw-Me-tvQ" kind="presentation" identifier="AddPost" id="bFb-pa-Ysd"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="Jvp-82-wTi" id="WsM-5F-E2e"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1g0-3u-fFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2580" y="1416"/>
-        </scene>
-        <!--Post Detail View Controller-->
-        <scene sceneID="9vB-CD-2PV">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="tYg-AA-kin" customClass="PostDetailViewController" customModule="EagleReviews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MZV-7a-ev5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-TE-DuI">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="obz-rS-CjQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Post goes here." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhR-VT-NBh">
-                                            <rect key="frame" x="4" y="8" width="406" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJn-bp-2rx">
-                                            <rect key="frame" x="293" y="50" width="117" height="31"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="31" id="fDB-sT-Y7m"/>
-                                                <constraint firstAttribute="width" constant="117" id="n1h-Lj-ovp"/>
-                                            </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title="Add Comment"/>
-                                            <connections>
-                                                <action selector="commentButtonPressed:" destination="tYg-AA-kin" eventType="touchUpInside" id="bKA-tE-3cl"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstItem="yhR-VT-NBh" firstAttribute="top" secondItem="obz-rS-CjQ" secondAttribute="top" constant="8" id="1gA-Kg-mXU"/>
-                                        <constraint firstItem="YJn-bp-2rx" firstAttribute="top" secondItem="yhR-VT-NBh" secondAttribute="bottom" constant="8" id="Qko-GI-5Ki"/>
-                                        <constraint firstAttribute="trailing" secondItem="YJn-bp-2rx" secondAttribute="trailing" constant="4" id="a5t-29-KVp"/>
-                                        <constraint firstItem="yhR-VT-NBh" firstAttribute="leading" secondItem="obz-rS-CjQ" secondAttribute="leading" constant="4" id="jCd-qi-rxK"/>
-                                        <constraint firstAttribute="trailing" secondItem="yhR-VT-NBh" secondAttribute="trailing" constant="4" id="zaA-5I-Mcf"/>
-                                    </constraints>
-                                </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell" id="8YB-B4-KBG" customClass="CommentTableViewCell" customModule="EagleReviews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="156.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8YB-B4-KBG" id="DJv-z7-UA7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment goes here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms2-SJ-pgJ">
-                                                    <rect key="frame" x="20" y="11" width="160" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="5Ag-Yd-obn" kind="show" identifier="ShowComment" id="zl3-XX-AWe"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Jxh-19-xjb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Jxh-19-xjb" firstAttribute="trailing" secondItem="f1c-TE-DuI" secondAttribute="trailing" id="AEh-Wm-0Ai"/>
-                            <constraint firstItem="f1c-TE-DuI" firstAttribute="top" secondItem="Jxh-19-xjb" secondAttribute="top" id="a8h-0E-Htm"/>
-                            <constraint firstItem="Jxh-19-xjb" firstAttribute="bottom" secondItem="f1c-TE-DuI" secondAttribute="bottom" id="ezD-Kw-7ZA"/>
-                            <constraint firstItem="f1c-TE-DuI" firstAttribute="leading" secondItem="Jxh-19-xjb" secondAttribute="leading" id="wGt-iF-yRC"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="uHp-RE-7C3">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="plain" id="djh-El-MP6">
-                            <connections>
-                                <action selector="cancelButtonPressed:" destination="tYg-AA-kin" id="oGl-mN-94d"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="K3x-1S-psw">
-                            <connections>
-                                <action selector="saveButtonPressed:" destination="tYg-AA-kin" id="tde-DA-E1o"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="cancelBarButton" destination="djh-El-MP6" id="O52-K8-IlM"/>
-                        <outlet property="commentLabel" destination="ms2-SJ-pgJ" id="VpQ-A8-Ceq"/>
-                        <outlet property="postTextField" destination="yhR-VT-NBh" id="uTO-0R-nYZ"/>
-                        <outlet property="saveBarButton" destination="K3x-1S-psw" id="d57-dO-mOL"/>
-                        <outlet property="tableView" destination="f1c-TE-DuI" id="ZDV-GT-bL8"/>
-                        <segue destination="c8N-c0-07F" kind="presentation" identifier="AddComment" id="xaW-Sw-ajR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1bi-Yz-Kjp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4310" y="1416"/>
-        </scene>
-        <!--Comment Table View Controller-->
-        <scene sceneID="mS1-es-BA3">
-            <objects>
-                <tableViewController id="5Ag-Yd-obn" customClass="CommentTableViewController" customModule="EagleReviews" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="75g-nI-riN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="202" id="J0e-wm-gfs">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="202"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J0e-wm-gfs" id="NRm-Ao-yKm">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post goes here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGT-8Q-MrQ">
-                                            <rect key="frame" x="24" y="19" width="366" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="FGT-8Q-MrQ" secondAttribute="trailing" constant="4" id="1w7-T7-La8"/>
-                                        <constraint firstItem="FGT-8Q-MrQ" firstAttribute="top" secondItem="NRm-Ao-yKm" secondAttribute="topMargin" constant="8" id="4CY-HK-sGh"/>
-                                        <constraint firstItem="FGT-8Q-MrQ" firstAttribute="leading" secondItem="NRm-Ao-yKm" secondAttribute="leadingMargin" constant="4" id="PJL-bn-Fwi"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="202" id="yLF-4m-NMC">
-                                <rect key="frame" x="0.0" y="246.5" width="414" height="202"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yLF-4m-NMC" id="xcs-Zb-Qrw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Comment goes here." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T59-ze-DIE">
-                                            <rect key="frame" x="24" y="19" width="366" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="T59-ze-DIE" firstAttribute="leading" secondItem="xcs-Zb-Qrw" secondAttribute="leadingMargin" constant="4" id="CVI-ph-NNm"/>
-                                        <constraint firstItem="T59-ze-DIE" firstAttribute="top" secondItem="xcs-Zb-Qrw" secondAttribute="topMargin" constant="8" id="P33-sk-yxI"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="T59-ze-DIE" secondAttribute="trailing" constant="4" id="zXQ-sE-ztN"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="5Ag-Yd-obn" id="Zan-Ad-Nmf"/>
-                            <outlet property="delegate" destination="5Ag-Yd-obn" id="pqw-ya-lwc"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="xDP-ye-8Cl">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Vmb-5P-YTe"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="iVE-Yv-L5h"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9e6-49-ofv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6369.5652173913049" y="1551.5625"/>
-        </scene>
         <!--Professor Detail View Controller-->
         <scene sceneID="U7P-9K-4nF">
             <objects>
@@ -378,34 +145,28 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pDg-gj-mlu">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="Gold"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="eUa-tI-3cV">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Professor Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-Uw-sqe">
                                             <rect key="frame" x="8" y="8" width="398" height="33"/>
+                                            <color key="backgroundColor" name="Gold"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="33" id="H31-Ml-FqF"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="24"/>
+                                            <color key="textColor" name="Maroon"/>
+                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             <connections>
                                                 <action selector="nameFieldChanged:" destination="77F-Kx-2ML" eventType="editingChanged" id="mpQ-KU-MXd"/>
                                             </connections>
                                         </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Average Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SML-Xx-NbY">
-                                            <rect key="frame" x="8" y="49" width="120" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_._" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-xk-KUu">
-                                            <rect key="frame" x="128" y="49" width="45" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SML-Xx-NbY">
+                                            <rect key="frame" x="8" y="49" width="138" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                            <color key="textColor" name="Maroon"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3K-s2-7VJ">
@@ -415,21 +176,33 @@
                                                 <constraint firstAttribute="height" constant="31" id="aNK-Yo-BPZ"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system" title="Add Review">
-                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="13"/>
+                                            <buttonConfiguration key="configuration" style="filled" image="pencil" catalog="system" title="Add Review">
+                                                <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                                                <color key="baseForegroundColor" name="Gold"/>
+                                                <color key="baseBackgroundColor" name="Maroon"/>
                                             </buttonConfiguration>
                                             <connections>
                                                 <action selector="ratingButtonPressed:" destination="77F-Kx-2ML" eventType="touchUpInside" id="GWd-j4-yf1"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_._" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-xk-KUu">
+                                            <rect key="frame" x="150" y="49" width="22.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                            <color key="textColor" name="Maroon"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" name="Gold"/>
                                     <constraints>
                                         <constraint firstItem="i3K-s2-7VJ" firstAttribute="top" secondItem="dNQ-Uw-sqe" secondAttribute="bottom" constant="4" id="0Am-ll-zg9"/>
                                         <constraint firstAttribute="trailing" secondItem="dNQ-Uw-sqe" secondAttribute="trailing" constant="8" id="0bc-ov-jek"/>
                                         <constraint firstItem="dNQ-Uw-sqe" firstAttribute="top" secondItem="eUa-tI-3cV" secondAttribute="top" constant="8" id="2pS-zW-xJ4"/>
+                                        <constraint firstItem="UQb-xk-KUu" firstAttribute="leading" secondItem="SML-Xx-NbY" secondAttribute="trailing" constant="4" id="7kM-aP-Vh7"/>
                                         <constraint firstAttribute="trailing" secondItem="i3K-s2-7VJ" secondAttribute="trailing" constant="8" id="BSp-VJ-g1v"/>
                                         <constraint firstAttribute="height" constant="90" id="I5k-tM-aGQ"/>
+                                        <constraint firstItem="SML-Xx-NbY" firstAttribute="leading" secondItem="dNQ-Uw-sqe" secondAttribute="leading" id="WWw-1G-VZb"/>
+                                        <constraint firstItem="SML-Xx-NbY" firstAttribute="top" secondItem="dNQ-Uw-sqe" secondAttribute="bottom" constant="8" symbolic="YES" id="ZNF-pI-Fwk"/>
+                                        <constraint firstItem="UQb-xk-KUu" firstAttribute="top" secondItem="dNQ-Uw-sqe" secondAttribute="bottom" constant="8" id="aNF-ZH-RoC"/>
                                         <constraint firstItem="dNQ-Uw-sqe" firstAttribute="leading" secondItem="eUa-tI-3cV" secondAttribute="leading" constant="8" id="xgN-FB-7lP"/>
                                     </constraints>
                                 </view>
@@ -446,6 +219,7 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z8V-Q2-OUc">
                                                             <rect key="frame" x="0.0" y="-0.5" width="15" height="15"/>
+                                                            <color key="backgroundColor" name="Gold"/>
                                                             <color key="tintColor" systemColor="labelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="6Qx-Cv-CiB"/>
@@ -454,6 +228,7 @@
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3Ep-Ls-Tsu">
                                                             <rect key="frame" x="16" y="-0.5" width="15" height="15"/>
+                                                            <color key="backgroundColor" name="Gold"/>
                                                             <color key="tintColor" systemColor="labelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="15" id="ZJv-pM-6cs"/>
@@ -462,6 +237,7 @@
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aNI-AN-Fm9">
                                                             <rect key="frame" x="32" y="-0.5" width="15" height="15"/>
+                                                            <color key="backgroundColor" name="Gold"/>
                                                             <color key="tintColor" systemColor="labelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="15" id="0IT-AG-abe"/>
@@ -470,6 +246,7 @@
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-Mn-uUg">
                                                             <rect key="frame" x="48" y="-0.5" width="15" height="15"/>
+                                                            <color key="backgroundColor" name="Gold"/>
                                                             <color key="tintColor" systemColor="labelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="15" id="35v-XX-eB4"/>
@@ -478,6 +255,7 @@
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jao-lF-1E5">
                                                             <rect key="frame" x="64" y="-0.5" width="15" height="15"/>
+                                                            <color key="backgroundColor" name="Gold"/>
                                                             <color key="tintColor" systemColor="labelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="GQy-QE-BMo"/>
@@ -495,8 +273,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="7CC-dc-RlG"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                                    <color key="textColor" name="Gold"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review summary/preview goes here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-sD-e4d">
@@ -504,8 +282,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="6zc-lK-Aqa"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="13"/>
+                                                    <color key="textColor" name="Gold"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -520,6 +298,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="ueJ-sD-e4d" secondAttribute="trailing" constant="8" id="kUt-kL-ZzM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Maroon"/>
                                         <connections>
                                             <outlet property="courseTitleLabel" destination="YhA-3g-07U" id="lpK-13-O9z"/>
                                             <outlet property="reviewTextLabel" destination="ueJ-sD-e4d" id="URN-Fx-eHp"/>
@@ -535,7 +314,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q7i-8F-HE4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Maroon"/>
                         <constraints>
                             <constraint firstItem="pDg-gj-mlu" firstAttribute="top" secondItem="Q7i-8F-HE4" secondAttribute="top" id="6zE-eE-UJB"/>
                             <constraint firstItem="pDg-gj-mlu" firstAttribute="leading" secondItem="Q7i-8F-HE4" secondAttribute="leading" id="DAu-A6-L3q"/>
@@ -544,15 +323,19 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Search Professors" id="ajZ-30-7fm"/>
+                        <barButtonItem title="Search Professors" id="ajZ-30-7fm">
+                            <color key="tintColor" name="Maroon"/>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="hej-0v-HTO">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c74-3r-GpO">
+                            <color key="tintColor" name="Maroon"/>
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="77F-Kx-2ML" id="xgC-EY-kxD"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="lCy-TK-fe5">
+                            <color key="tintColor" name="Maroon"/>
                             <connections>
                                 <action selector="saveButtonPressed:" destination="77F-Kx-2ML" id="0N6-cN-aK4"/>
                             </connections>
@@ -602,7 +385,9 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="lcJ-lC-6gJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Gold"/>
+                        <color key="separatorColor" name="Gold"/>
+                        <color key="sectionIndexBackgroundColor" name="Gold"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Tgd-63-TWJ">
                             <rect key="frame" x="0.0" y="838" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -624,7 +409,7 @@
                                                         <constraint firstAttribute="height" constant="32" id="6za-zC-ma6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Maroon"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -634,6 +419,7 @@
                                                 <constraint firstItem="5Ui-DQ-4Jt" firstAttribute="top" secondItem="x34-ML-TNH" secondAttribute="top" constant="4" id="gXX-tn-7MZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Gold"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -651,8 +437,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="ZT9-wX-qKV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                                    <color key="textColor" name="Maroon"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAr-Ec-R8K">
@@ -763,6 +549,7 @@
                                                 <constraint firstItem="FZJ-Y9-CvR" firstAttribute="centerX" secondItem="XxJ-yk-Cjs" secondAttribute="centerX" id="xjl-8d-NFp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Gold"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -776,21 +563,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-us-5Ui">
-                                                    <rect key="frame" x="8" y="10" width="82" height="24"/>
+                                                    <rect key="frame" x="8" y="10" width="120" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="1JY-1B-f2e"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="yoh-Vy-7Bo"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                                    <color key="textColor" name="Maroon"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title of Course" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nH4-ai-2PJ">
-                                                    <rect key="frame" x="98" y="5" width="308" height="34"/>
+                                                    <rect key="frame" x="136" y="5" width="270" height="34"/>
                                                     <color key="backgroundColor" name="UI Element Background"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="Xdm-Ot-L1V"/>
                                                     </constraints>
+                                                    <color key="textColor" name="Maroon"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
@@ -807,6 +595,7 @@
                                                 <constraint firstItem="mu3-us-5Ui" firstAttribute="leading" secondItem="cCE-ep-EDB" secondAttribute="leading" constant="8" id="bWq-1f-THq"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Gold"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -820,19 +609,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxa-9q-4l0">
-                                                    <rect key="frame" x="20" y="23" width="51" height="24"/>
+                                                    <rect key="frame" x="20" y="23" width="68" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="IBJ-Gm-1pZ"/>
                                                         <constraint firstAttribute="height" constant="24" id="uVM-C8-DxQ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                                    <color key="textColor" name="Maroon"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Review goes here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fyj-Yh-2QI">
                                                     <rect key="frame" x="8" y="50" width="398" height="220"/>
                                                     <color key="backgroundColor" name="UI Element Background"/>
-                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <color key="textColor" name="Maroon"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -847,6 +636,7 @@
                                                 <constraint firstItem="pxa-9q-4l0" firstAttribute="leading" secondItem="d6v-RP-SS7" secondAttribute="leadingMargin" id="xNW-6p-MOE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Gold"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -868,7 +658,7 @@
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="Delete Review">
-                                                        <color key="titleColor" systemColor="systemRedColor"/>
+                                                        <color key="titleColor" name="Maroon"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="deleteButtonPressed:" destination="nBI-52-ozF" eventType="touchUpInside" id="Bom-Rq-EqS"/>
@@ -881,6 +671,7 @@
                                                 <constraint firstItem="Fw2-Zz-dZ2" firstAttribute="top" secondItem="c1y-Mb-meF" secondAttribute="top" constant="8" id="iGu-PK-XQt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Gold"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -892,13 +683,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Pqy-xn-9tA">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nJo-T8-HFE">
-                            <color key="tintColor" systemColor="labelColor"/>
+                            <color key="tintColor" name="Maroon"/>
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="nBI-52-ozF" id="8ne-2X-MqK"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="jRJ-Gj-QBa">
-                            <color key="tintColor" systemColor="labelColor"/>
+                            <color key="tintColor" name="Maroon"/>
                             <connections>
                                 <action selector="saveButtonPressed:" destination="nBI-52-ozF" id="pNu-Fz-c4E"/>
                             </connections>
@@ -951,6 +742,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sZT-c2-fJm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="Gold"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -961,71 +753,20 @@
             </objects>
             <point key="canvasLocation" x="736.23188405797111" y="109.82142857142857"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WbE-Ij-DZH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="mFw-Me-tvQ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="432-Ku-oeE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tYg-AA-kin" kind="relationship" relationship="rootViewController" id="mN0-Gi-24a"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X6Q-eG-7nz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2971" y="779"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="mqo-p9-geh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="LfG-CE-KBT" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kRt-Nf-yOe">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="AFk-sF-aHY" kind="relationship" relationship="rootViewController" id="uA5-xL-DWL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9h5-2f-vYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="955" y="1264"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="08A-z8-axW">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c8N-c0-07F" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="47F-03-6JI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U79-AF-hhb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5Ag-Yd-obn" kind="relationship" relationship="rootViewController" id="2c5-yO-k69"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eb5-NS-h66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6370" y="812"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="j9U-4T-zBf"/>
-        <segue reference="GnX-4N-6WO"/>
-        <segue reference="zl3-XX-AWe"/>
-        <segue reference="fdS-a7-giv"/>
+        <segue reference="i5u-2T-7LI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <namedColor name="Gold">
+            <color red="0.83529411764705885" green="0.77647058823529413" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Maroon">
+            <color red="0.5490196078431373" green="0.13333333333333333" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="UI Element Background">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -1034,9 +775,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

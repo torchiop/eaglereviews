@@ -33,10 +33,10 @@ class ProfessorListViewController: UIViewController {
     
     func configureSegmentedControl() {
         // TODO: Set font colors for segmented control
-        let orangeFontColor = [NSAttributedString.Key.foregroundColor : UIColor(named: "PrimaryColor") ?? UIColor.orange]
-        let whiteFontColor = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        sortSegmentedControl.setTitleTextAttributes(orangeFontColor, for: .selected)
-        sortSegmentedControl.setTitleTextAttributes(whiteFontColor, for: .normal)
+        let maroonColor = [NSAttributedString.Key.foregroundColor : UIColor(named: "Maroon") ?? UIColor.orange]
+        let goldColor = [NSAttributedString.Key.foregroundColor : UIColor(named: "Gold")]
+        sortSegmentedControl.setTitleTextAttributes(maroonColor, for: .selected)
+        sortSegmentedControl.setTitleTextAttributes(goldColor, for: .normal)
         // Add white border to segmented control
         sortSegmentedControl.layer.borderColor = UIColor.white.cgColor
         sortSegmentedControl.layer.borderWidth = 1.0
@@ -75,6 +75,8 @@ extension ProfessorListViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProfessorTableViewCell
         cell.nameLabel?.text = professors.professorArray[indexPath.row].name
+        let roundedAverage = ((professors.professorArray[indexPath.row].averageRating * 10).rounded()) / 10
+        cell.ratingLabel?.text = "Avg. Rating: \(String(roundedAverage))"
         return cell
     }
     
