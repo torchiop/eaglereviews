@@ -14,7 +14,7 @@ class ProfessorTableViewCell: UITableViewCell {
     var professor: Professor! {
         didSet {
             nameLabel.text = professor.name
-            let roundedAverage = (professor.averageRating * 10.rounded()) / 10
+            let roundedAverage = ((professor.averageRating * 10).rounded()) / 10
             ratingLabel.text = "Avg. Rating: \(roundedAverage)"
         }
     }

@@ -107,7 +107,7 @@ class Professor {
             let spotRef = db.collection("professors").document(self.documentID)
             spotRef.setData(dataToSave) { error in
                 if let error = error {
-                    print("Error updating document \(self.documentID) in spot after changing averageReview & numberOfReviews info \(error.localizedDescription)")
+                    print("Error updating document \(self.documentID) in professor after changing averageReview & numberOfReviews info \(error.localizedDescription)")
                     completed()
                 } else {
                     print("New average calculated.")

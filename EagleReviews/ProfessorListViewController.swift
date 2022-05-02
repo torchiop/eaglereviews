@@ -53,9 +53,9 @@ class ProfessorListViewController: UIViewController {
     func sortBasedOnSegementPressed() {
         switch sortSegmentedControl.selectedSegmentIndex {
         case 0: // A-Z
-            professors.professorArray.sorted(by: {$0.name < $1.name})
+            professors.professorArray.sort(by: {$0.name < $1.name})
         case 1: // averageRating
-            professors.professorArray.sorted(by: {$0.averageRating < $1.averageRating})
+            professors.professorArray.sort(by: {$0.averageRating > $1.averageRating})
         default:
             print("Check the segment control for an error.")
         }
